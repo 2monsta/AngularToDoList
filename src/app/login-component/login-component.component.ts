@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginDetails} from './login-details'
 import {  NgForm} from "@angular/forms";
+import { RouterModule } from "@angular/router";
 @Component({
   selector: 'app-login-component',
   templateUrl: './login-component.component.html',

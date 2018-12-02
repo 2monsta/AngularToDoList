@@ -1,3 +1,34 @@
-<p>
-  register works!
-</p>
+<div class="card" style="width: 18rem; Margin:auto;">
+  <div class="card-body">
+    <h5 class="card-title">Register</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Please login to view your todo list</h6>
+    <form #registerForm='ngForm' (ngSubmit)="onSubmit(registerForm)">
+      <div class="form-group">
+        <label for="loginEmail">Login Email</label>
+        <input type="text" id='loginEmail' class="form-control" ngModel name='loginEmail' #loginEmailAddress='ngModel'>
+      </div>
+      <div class="form-group">
+        <label for="loginPassword">Password</label>
+        <input type="password" class='form-control' id='loginPassword' ngModel name='loginPassword' #loginPassword='ngModel'>
+      </div>
+      <div class="form-group">
+        <label for="userName">UserName</label>
+        <input type="text" class='form-control' id='userName' ngModel name='userName' #userName='ngModel'>
+      </div>
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" class='form-control' id='firstName' ngModel name='firstName' #firstName='ngModel'>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" class='form-control' id='lastName' ngModel name='lastName' #lastName='ngModel'>
+      </div>      
+      <a>
+        <button type="submit" class='btn btn-primary btn-block'>Create Account</button>
+      </a>
+      <a routerLink='/'>
+        <button class="btn btn-success btn-block">Login Instead</button>
+      </a>
+    </form>
+  </div>
+</div>
