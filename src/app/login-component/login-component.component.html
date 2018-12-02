@@ -1,0 +1,19 @@
+<!-- card for the login box-->
+<div class="card" style="width: 18rem; Margin:auto;">
+  <div class="card-body">
+    <h5 class="card-title">Login</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Please login to view your todo list</h6>
+    <form #loginForm ='ngForm' (ngSubmit)="onSubmit(loginForm)">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" id='email' class="form-control" ngModel name='email' #emailAddress='ngModel'>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class='form-control' id='password' ngModel name='password' #passowrd='ngModel'>
+      </div>
+      <button type="submit" class='btn btn-primary' >Login</button>
+      <button class="btn btn-secondary">Register</button>
+    </form>
+  </div>
+</div>
