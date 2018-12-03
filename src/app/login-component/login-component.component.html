@@ -13,7 +13,7 @@
         <input type="password" class='form-control' id='password' ngModel name='password' #passowrd='ngModel'>
       </div>
       <a>
-        <button type="submit" class='btn btn-primary btn-block'>Login</button>
+        <button type="submit" class='btn btn-primary btn-block' (click)='sendDataToBackend()'>Login</button>
       </a>
       <a routerLink='/register'>
         <button class="btn btn-success btn-block">
